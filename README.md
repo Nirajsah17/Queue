@@ -27,7 +27,7 @@ The EventQueue module provides a flexible and event-driven way to manage tasks i
 ### Installation
 
 ```bash
-  npm install Queue
+  npm install jsqueue
 ```
 
 ### Usage [Queue]
@@ -100,7 +100,7 @@ queue.cancelAllTasks();
 #### Basic Example
 
 ```javascript
-import { Queue } from "Queue";
+import { Queue } from "jsqueue";
 
 const queue = new Queue();
 
@@ -133,7 +133,7 @@ In this example, we enqueue two API request tasks and two video conversion tasks
 #### Example with Error Handling
 
 ```javascript
-import { Queue } from "Queue";
+import { Queue } from "jsqueue";
 
 const queue = new Queue();
 
@@ -186,7 +186,7 @@ In this example, we define error handling functions for API requests and video c
 #### Example with Progress Tracking
 
 ```javascript
-import { Queue } from "Queue";
+import { Queue } from "jsqueue";
 
 const queue = new Queue();
 

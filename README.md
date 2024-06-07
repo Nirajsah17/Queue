@@ -27,10 +27,10 @@ The EventQueue module provides a flexible and event-driven way to manage tasks i
 ### Installation
 
 ```bash
-  npm install jsqueue
+  npm install gn-queue
 ```
 
-### Usage [Queue]
+### Usage [gn-queue]
 
 1. Create an instance of the `Queue` class:
 
@@ -100,7 +100,7 @@ queue.cancelAllTasks();
 #### Basic Example
 
 ```javascript
-import { Queue } from "jsqueue";
+import { Queue } from "gn-queue";
 
 const queue = new Queue();
 
@@ -133,7 +133,7 @@ In this example, we enqueue two API request tasks and two video conversion tasks
 #### Example with Error Handling
 
 ```javascript
-import { Queue } from "jsqueue";
+import { Queue } from "gn-queue";
 
 const queue = new Queue();
 
@@ -186,7 +186,7 @@ In this example, we define error handling functions for API requests and video c
 #### Example with Progress Tracking
 
 ```javascript
-import { Queue } from "jsqueue";
+import { Queue } from "gn-queue";
 
 const queue = new Queue();
 
@@ -366,12 +366,12 @@ n this example, we've updated the apiRequest and convertVideoToFrames functions 
 Additionally, we've added a setTimeout function that calls queue.cancelAllTasks() after 5 seconds. This will cancel all tasks in the queue, including the currently running task.
 When you run this code, you'll see that tasks start executing, and after 5 seconds, all tasks are canceled. The output might look something like this:
 
-## Usage [EventQueue]
+## Usage [gn-queue (EventQueue)]
 
 ### Importing EventQueue
 
 ```javascript
-import { EventQueue } from "Queue";
+import { EventQueue } from "gn-queue";
 ```
 
 **Creating an EventQueue Instance**
